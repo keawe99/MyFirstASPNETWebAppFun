@@ -1,0 +1,178 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body>
+    <div class="content">
+        <div class="section current" id="section1">
+        <p>
+            <b>My name is Steven Armstrong. </b> 
+            <br><br>
+            I am from Draper, Utah. I love to snowboard, play football, and go to the gym.
+            <br><br>
+            <img src="img/liftee.jpg" style="height: 250px; width:150px;"/>
+        </p>
+
+        <!-- few paragraphs about hobby -->
+
+        <p class="text">
+                Recently, I embarked on a new chapter of my career journey, joining one of the top-tier retail giants in the United States. 
+                Originating from the visionary hub of Beaverton, Oregon, Nike, the renowned footwear empire founded by Phil Knight, welcomed me into its fold. 
+                Within this esteemed environment, I began curating a personal shoe collection, which has flourished exponentially thanks to the appealing perks afforded by Nike. 
+                Here, I share some of my latest acquisitions that enrich my collection.
+        </p>
+
+            <br><br>
+
+
+            <button class="nextSectionBtn">Next Section</button>
+        </div>
+
+        <div class="section current" id="section2" style="display: none;">
+        <!--introduce first shoe here-->
+        <!--Air Max 1 Premium-->
+        <center><h1><b>My Collection</b></h1></center>
+        <br><br>
+        <h3>Air Max 1 Premium </h3>
+        <br><br>
+        <h4>Style: FD5743</h4>
+        <br><br>
+        <h4>Color: 200</h4>
+        <br><br>
+
+            <img class="interactable-image" src="img/airmax1.jpg" />
+            <img src="img/airmax2.jpg" />
+            <img src="img/airmax3.jpg" />
+            <img src="img/airmax4.jpg" />
+            <img src="img/airmax5.jpg" />
+            <img src="img/airmax6.jpg" />
+
+            <br><br>
+
+            <button class="nextSectionBtn">Next Section</button>
+        </div>
+
+        <!--Air Max 1 Premium "Escape" -->
+
+        <div class="section current" id="section3" style="display: none;">
+
+                <br><br>
+                <h3>Air Max 1 Premium "Escape" </h3>
+                <br><br>
+
+                <h4>Style: FJ0698</h4>
+                <br><br>
+                <h4>Color: 100</h4>
+                <br><br>
+
+                <img src="img/airmaxE1.jpg" />
+                <img src="img/airmaxE2.jpg" />
+                <img src="img/airmaxE3.jpg" />
+                <img src="img/airmaxE4.jpg" />
+                <img src="img/airmaxE5.jpg" />
+                <img src="img/airmaxE6.jpg" />
+                <br><br>
+                <center><h5>Special Feature: </h5></center>
+                <center><img src="img/airmaxE7.jpg" /></center>
+
+                <br><br>
+
+                <p style="font-family:'Franklin Gothic';">The etched spruce trees give a special northwestern twist to the shoe. 
+                    This special detail makes this shoe extremely unique and a must cop for sneaker heads everywhere.
+                </p>
+
+                <br><br>
+
+                <button class="nextSectionBtn">Next Section</button>
+        </div>
+      
+
+        <!--Air Jordan 3 Ivory-->
+
+        <div class="section current" id="section4" style="display: none;">
+
+            <br><br>
+
+            <h3>Air Jordan 3 Retro Craft "Ivory"</h3>
+            <br><br>
+            <h4>Style: FJ9479</h4>
+            <br><br>
+            <h4>Color: 100</h4>
+            <br /><br>
+
+            <img src="img/j3(1).jpg" />
+            <img src="img/j3(2).jpg" />
+            <img src="img/j3(3).jpg" />
+            <img src="img/j3(4).jpg" />
+            <img src="img/j3(5).jpg" />
+            <img src="img/j3(6).jpg" />
+
+            <br><br>
+
+            <button class="nextSectionBtn">Next Section</button>
+        </div>
+
+        <!--Air Jordan 1 Low-->
+
+        <div class="section current" id="section5" style="display: none;">
+
+            <br><br>
+
+            <h3>Air Jordan 1 Low</h3>
+            <br><br>
+            <h4>Style: 553558</h4>
+            <br><br>
+            <h4>Color: 161</h4>
+            <br><br>
+
+            <img src="img/AJ1(1).jpg" />
+            <img src="img/AJ1(2).jpg" />
+            <img src="img/AJ1(3).jpg" />
+            <img src="img/AJ1(4).jpg" />
+            <img src="img/AJ1(5).jpg" />
+            <img src="img/AJ1(6).jpg" />
+
+            <br><br>
+
+            <button class="nextSectionBtn">Next Section</button>
+        </div>
+
+        <!--Air Force 1 Mid '07-->
+
+        <div class="section current" id="section6" style="display: none;">
+
+            <br><br>
+
+            <h3>Air Force 1 Mid '07'</h3>
+            <br><br>
+            <h4>Style: DZ2672</h4>
+            <br><br>
+            <h4>Color: 101</h4>
+            <br><br>
+
+            <img src="img/AF1(1).jpg" />
+            <img src="img/AF1(2).jpg" />
+            <img src="img/AF1(3).jpg" />
+            <img src="img/AF1(4).jpg" />
+            <img src="img/AF1(5).jpg" />
+            <img src="img/AF1(6).jpg" />
+
+            <br><br>
+
+            <button class="nextSectionBtn">Next Section</button>
+        </div>
+
+        <div class="buttons section" id="section7" style="display: none;">
+
+            <center><h2 style="font-size:xx-large"><b>That's it so far...</b></h2></center>
+
+            <p>Click the link below to get a price estimation and start your shoe collection today!</p>
+
+        </div>
+    <!-- insert link here -->
+
+    <br><br>
+
+    <p>Interested in my hobby? Click <a href="@Url.Action("Calculator", "Home")">here</a> to see how much it would cost!</p>
+
+    </div>
+</body>

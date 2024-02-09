@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<br><br>
+<center><h1 style="font-size: 'larger';">Help me help you</h1></center>
+<br><br><br>
+<center><p style="font-size: 'xx-large'; font-family:'Cascadia Code';">Looking for a fresh start to kickstart your shoe collection? Let's see what I can do for you!</p></center>
+<br><br><br />
+
+<!--insert in-line css here for the button-->
+<style>
+    .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #4CAF50; /* Green border */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+        background-color: #45a049; /* Darker green */
+}
+</style>
+
+
+<!--insert form here to calculate hours and average-->
+<!--charge $20/hour for advice and tips-->
+<center>
+    <div>
+        <h2>Hourly Rate Calculator</h2>
+        <form id="hourlyRateForm">
+            <label for="hours">Number of Hours Needed:</label><br><br>
+            <input type="number" id="hours" name="hours" min="0" required><br><br />
+            <label for="hourlyRate">Hourly Rate:</label><br><br>
+            <input type="text" id="hourlyRate" name="hourlyRate" value="$20" readonly><br><br>
+            <label for="Calendar">Book an Appointment</label><br><br>
+            <input type="date" id="Date" name="appointment" /><br><br>
+            <button type="button" class="button" onclick="calculateTotal()">Calculate Total</button><br><br />
+            <label for="total">Total:</label><br><br />
+        <input type="text" id="total" name="total" readonly><br><br><br>   
+        </form>
+    <a href=" @Url.Action("Index", "Home")">Home</a><br><br>
+    </div>
+</center>
+
+<img src="~/img/nikewallpaper.jpg" style="-o-object-position:left;" />
+
+<img src="~/img/nikegif.gif" style="-o-object-position:right;"/>
